@@ -18,13 +18,13 @@ const Banner = () => {
         showThumbs={false}>
             
             <div>
-                <Image src={canonad} width={1500} height={600} />
+                <Image alt="Canon Camera Advertisement" src={canonad} width={1500} height={600} />
             </div>
             <div>
-                <Image src={djiad} width={1500} height={600} />
+                <Image alt="DJI Advertisement" src={djiad} width={1500} height={600} />
             </div>
             <div>
-                <Image src={djiad2} width={1500} height={600} />
+                <Image alt="DJI Advertisement 2" src={djiad2} width={1500} height={600} />
             </div>
 
         </Carousel>
