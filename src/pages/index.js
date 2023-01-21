@@ -6,7 +6,7 @@ import ProductFeed from '@/components/productfeed'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home( {products} ) {
+export default function Home() {
   return (
     <div>
       <Head>
