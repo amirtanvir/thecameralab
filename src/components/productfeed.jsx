@@ -75,17 +75,17 @@ const ProductFeed = ( ) => {
     return (
     <div className='grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 md:-mt-20 mx-auto'>
         {products.slice(0,3).map(({id, title, price, category, description, image, rating}) => (
-            <div>
+            <div key={id} >
                 <Product key={id} price={price} title={title} description={description} 
                  rating={rating} category={category} image={image} />
             </div>
         ))}
 
-        <Image key={id} className='md:col-span-full' src={nikon} width={1500} height={300}/>
+        <Image key={id} alt="Bear swimming with fish - Nikon advertisement" className='md:col-span-full' src={nikon} width={1500} height={300}/>
 
 
         {products.slice(3,7).map(({id, title, price, category, description, image, rating}) => (
-            <div>
+            <div key={id}>
                 <Product key={id} price={price} title={title} description={description} 
                  rating={rating} category={category} image={image} />
             </div>

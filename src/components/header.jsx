@@ -26,12 +26,12 @@ const Header = () => {
 
                 <div className='link'>
                     <p>Hello, Amir Tanvir</p>
-                    <p className='font-extrabold md:text-sm'>Account & Lists</p>
+                    <p className='font-extrabold md:text-sm'>Account and Lists</p>
                 </div>
 
                 <div className='link'>
                     <p>Returns</p>
-                    <p className='font-extrabold md:text-sm'>& Orders</p>
+                    <p className='font-extrabold md:text-sm'>and Orders</p>
                 </div>
 
                 <div className='relative link flex items-center'>
@@ -49,7 +49,7 @@ const Header = () => {
                 <Bars3Icon className='h-6 mr-1' />
                 All
             </p>
-            <p className='link'>Today's Deals</p>
+            <p className='link'>Todays Deals</p>
             <p className='link'>Drones</p>
             <p className='link'>Cameras</p>
             <p className='link hidden lg:inline-flex'>Accessories</p>
