@@ -9,6 +9,7 @@ const Header = () => {
         <div className='flex items-center bg-deepblue p-1 flex-grow py-2'>
             <div className='pb-1 pt-1 flex items-center flex-grow sm:flex-grow-0'>
                 <Image
+                    alt='The Camera Labs Logo'
                     src={cameralablogo}
                     width={70}
                     height={70}

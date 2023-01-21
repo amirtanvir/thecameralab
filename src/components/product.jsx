@@ -10,7 +10,7 @@ const Product = ({ id, title, price, description, category, image, rating }) => 
         
         <p className='absolute top-2 right-2 italic text-xs'>{category}</p>
         
-        <Image src={image} width={200} height={200} />
+        <Image alt={title} src={image} width={200} height={200} />
         
         <h4>{title}</h4>
 

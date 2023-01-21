@@ -81,7 +81,7 @@ const ProductFeed = ( ) => {
             </div>
         ))}
 
-        <Image className='md:col-span-full' src={nikon} width={1500} height={300}/>
+        <Image key={id} className='md:col-span-full' src={nikon} width={1500} height={300}/>
 
 
         {products.slice(3,7).map(({id, title, price, category, description, image, rating}) => (
