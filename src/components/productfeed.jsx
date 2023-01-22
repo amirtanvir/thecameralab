@@ -73,7 +73,7 @@ export const products = [{"id":1,
 
 const ProductFeed = ( ) => {
     return (
-    <div className='grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 md:-mt-20 mx-auto'>
+    <div className='grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 md:-mt-40 mx-auto'>
         {products.slice(0,3).map(({id, title, price, category, description, image, rating}) => (
             <div key={id} >
                 <Product key={id} price={price} title={title} description={description} 
