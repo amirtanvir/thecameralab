@@ -1,9 +1,26 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { StarIcon } from '@heroicons/react/24/outline'
+import { useDispatch } from "react-redux"
+import { addToBasket } from '@/slices/basketSlice'
 
 const Product = ({ id, title, price, description, category, image, rating }) => {
   
+    const dispatch = useDispatch();
+
+    const addItemToBasket = () => {
+            const product = {
+                id,
+                title, 
+                price, 
+                description, 
+                category, 
+                image, 
+                rating
+            };
+
+            dispatch(addToBasket(product))
+        }
   
     return (
     <div className='relative flex flex-col m-5 bg-white z-30 p-10'>
@@ -29,9 +46,9 @@ const Product = ({ id, title, price, description, category, image, rating }) => 
 
         <p className='mb-5'>£{price}</p>
                 
-        <button className='mt-auto button' >Add to basket</button>
+        <button onClick={addItemToBasket} className='mt-auto button' >Add to basket</button>
     </div>
-  )
+)
 }
 
 export default Product
