@@ -14,12 +14,16 @@ const Header = () => {
     
     const items = useSelector(selectItems)
 
+    const reloadWhenYouClickHomePage = () => {
+        router.push('/')
+    }
+
   return (
     <header>
         <div className='flex items-center bg-deepblue p-1 flex-grow py-2'>
             <div className='pb-1 pt-1 flex items-center flex-grow sm:flex-grow-0'>
                 <Image
-                    onClick={() => router.push('/')}
+                    onClick={reloadWhenYouClickHomePage}
                     alt='The Camera Labs Logo'
                     src={cameralablogo}
                     width={70}
@@ -40,7 +44,7 @@ const Header = () => {
                     <p className='font-extrabold md:text-sm'>Account and Lists</p>
                 </div>
 
-                <div className='link'>
+                <div onClick={() => router.push('/orders')} className='link'>
                     <p>Returns</p>
                     <p className='font-extrabold md:text-sm'>and Orders</p>
                 </div>
